@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main(){
 //El fondo de administración de pensiones requiere clasificar a las personas que se jubilaran en el año
 //2009. Existen tres tipos de jubilaciones: por edad, por antigüedad joven y por antigüedad adulta. Las
@@ -13,12 +15,12 @@ int edadpersona, antiguedadempleo;
 print("Ingrese su edad");
 edadpersona=int.parse(stdin.readLineSync()!);
 print("Ingrese cuanto tiempo levva trabajando");
-antiguedadempleo=int.parse(stdin.readLineSync()!)
+antiguedadempleo=int.parse(stdin.readLineSync()!);
 
 if(edadpersona >= 60 && antiguedadempleo<25){
   print("Su jubilacion es Jubilacion por edad");
 }else{
   if(edadpersona<60 && antiguedadempleo>=25)
-  print("Su Jubilacion es por antiguedad joven")
+  print("Su Jubilacion es por antiguedad joven");
 }
 }
